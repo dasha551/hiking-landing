@@ -1,3 +1,4 @@
+// VIDEO SLIDER START 
 const btns = document.querySelectorAll(".nav__btn");
 const slides = document.querySelectorAll(".video__slide");
 
@@ -19,3 +20,12 @@ btns.forEach((btn, i) => {
         sliderNav(i);
     });
 });
+// VIDEO SLIDER END 
+
+// BURGER START 
+document.querySelector('.burger-menu').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.header__nav').classList.toggle('open');
+});
+// BURGER END 
+
