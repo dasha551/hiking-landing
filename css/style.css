@@ -1,0 +1,359 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Armata&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Actor&family=Adamina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+body {
+    font-family: 'Actor', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #0B1D26;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+li {
+    list-style-type: none;
+}
+.container {
+    max-width: 1463px;
+    padding: 64px 80px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9999;
+}
+
+
+
+/* HEADER START  */
+
+.header__container {
+    max-width: 1760px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo__text {
+    font-family: "Adamina";
+    font-size: 32px;
+    letter-spacing: 0.01em;
+}
+
+.header__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.account__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* HEADER END  */
+
+
+
+/* COVER START  */
+
+.cover::before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(1, 33, 46, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.cover__container {
+    max-width: 1760px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SOCIAL START  */
+
+.social__item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.social__text {
+    writing-mode: vertical-lr;
+}
+.social__image {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.social__logo {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* SOCIAL END  */
+
+
+/* COVER START  */
+
+.cover__slider{
+    padding: 0 396px;
+}
+
+.cover__text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-bottom: 32px;
+}
+.cover__text-ps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    letter-spacing: 0.33em;
+    text-transform: uppercase;
+    color: #fbd784;
+    padding-bottom: 32px;
+}
+.line {
+    display: flex;
+    width: 72px;
+    height: 2px;
+    background-color: #fbd784;
+}
+.cover__slider-title {
+    font-family: "Adamina", sans-serif;
+    font-size: 88px;
+    line-height: 114%;
+    text-transform: capitalize;
+    max-width: 930px;
+}
+.cover__slider-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+
+
+.cover video {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video__slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.video__slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+.slider__navigation{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(80px);
+    margin-bottom: 12px;
+
+}
+
+
+
+.slider__navigation .nav__btn{
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    transition: 0.3s ease;
+}
+.slider__navigation .nav__btn.active{
+    background: rgb(0, 100, 194);
+}
+
+.slider__navigation .nav__btn:not(:last-child){
+    margin-right: 20px;
+}
+
+.slider__navigation .nav__btn:hover{
+    transform: scale(1.2);
+}
+/* COVER END  */
+
+
+
+/* MAIN START  */
+
+.main {
+    padding-top: 350px;
+}
+
+.article-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 200px;
+}
+.box-reverse{
+    flex-direction: row-reverse;
+}
+
+.ps-1::before{
+    content: '01';
+    font-size: 240px;
+    line-height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    left: -100px;
+}
+.ps-2::before{
+    content: '02';
+    font-size: 240px;
+    line-height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    left: -130px;
+    top: -100px;
+}
+.ps-3::before{
+    content: '03';
+    font-size: 240px;
+    line-height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    left: -140px;
+    top: -110px;
+}
+
+.main__text-ps{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 27px;
+    position: relative;
+    
+}
+.ps-text {
+    font-size: 18px;
+    letter-spacing: 0.33em;
+    text-transform: uppercase;
+    color: #fbd784;
+}
+.main__article-title{
+    font-size: 64px;
+    font-family: "Adamina", sans-serif;
+    max-width: 555px;
+    padding-bottom: 27px;
+}
+.main__article-paragraph{
+    font-size: 18px;
+    line-height: 178%;
+    max-width: 632px;
+    padding-bottom: 27px;
+}
+.article__link-arrowbox{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.article__link-text a {
+    font-size: 18px;
+    color: #fbd784;
+}
+/* MAIN END  */
+
+/* FOOTER START  */
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__logo-text{
+    font-family: "Adamina";
+    font-size: 32px;
+    letter-spacing: 0.01em;
+    padding-bottom: 15px;
+}
+.footer__logo-comment{
+    font-size: 18px;
+    line-height: 178%;
+    max-width: 303px;
+    padding-bottom: 114px;
+}
+.footer__agreements-text{
+    font-size: 18px;
+    line-height: 178%;
+    opacity: 0.5;
+}
+
+
+.block-container{
+    display: flex;
+    flex-direction: row;
+    gap: 223px;
+}
+.blog-title{
+    font-size: 24px;
+    line-height: 133%;
+    color: #fbd784;
+    font-family: "Adamina", sans-serif;
+    padding-bottom: 24px;
+}
+.blog-link{
+    font-size: 18px;
+    line-height: 178%;
+}
+.footer__blog-link{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.more-title{
+    font-family: "Adamina", sans-serif;
+    font-size: 24px;
+    line-height: 133%;
+    color: #fbd784;
+    padding-bottom: 24px;
+}
+.footer__more-link{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.more-link{
+    font-size: 18px;
+    line-height: 178%;
+}
+
+/* FOOTER END  */
