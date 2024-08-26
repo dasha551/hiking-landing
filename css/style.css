@@ -8,9 +8,7 @@
     to {opacity: 1;}
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 body {
     font-family: 'Actor', sans-serif;
     color: #fff;
